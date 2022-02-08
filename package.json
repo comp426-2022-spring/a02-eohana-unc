@@ -8,7 +8,7 @@
     "test": "echo \\\"Error: no test specified\\\" && exit 1",
     "flip": "node flip.js",
     "flips": "node flips.js --number=3",
-    "guess-flip": "node guess-flip.js"
+    "guess-flip": "node guess-flip.js --call=heads"
   },
   "repository": {
     "type": "git",

@@ -75,7 +75,12 @@ function countFlips(array) {
  */
 
 function flipACoin(call) {
-
+  let result = new function() {
+    this.call = call;
+    this.flip = coinFlip();
+    this.result = (this.call === this.flip) ? "win" : "lose";
+  }
+  return result;
 }
 
 
@@ -83,4 +88,4 @@ function flipACoin(call) {
  * 
  * Export all of your named functions
 */
-export {coinFlip, coinFlips}
+export {coinFlip, coinFlips, flipACoin}
