@@ -39,7 +39,11 @@ function coinFlip() {
  */
 
 function coinFlips(flips) {
-
+  result = [];
+  for (let i = 0; i < flips; i++){
+    result.push(coinFlip());
+  }
+  return result;
 }
 
 /** Count multiple flips
@@ -79,4 +83,4 @@ function flipACoin(call) {
  * 
  * Export all of your named functions
 */
-export {coinFlip}
+export {coinFlip, coinFlips}
