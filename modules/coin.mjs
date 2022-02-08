@@ -15,7 +15,8 @@
  */
 
 function coinFlip() {
-
+  const choices = ["heads", "tails"];
+  return choices[Math.floor(Math.random() * choices.length)]
 }
 
 /** Multiple coin flips
@@ -78,3 +79,4 @@ function flipACoin(call) {
  * 
  * Export all of your named functions
 */
+export {coinFlip}
