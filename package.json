@@ -5,9 +5,9 @@
   "main": "flip.js",
   "type": "module",
   "scripts": {
-    "test": "echo \\\"Error: no test specified\\\" && exit 1",   
+    "test": "echo \\\"Error: no test specified\\\" && exit 1",
     "flip": "node flip.js",
-    "flips": "node flips.js",
+    "flips": "node flips.js --number=3",
     "guess-flip": "node guess-flip.js"
   },
   "repository": {
@@ -24,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/comp426-2022-spring/a02-eohana-unc/issues"
   },
-  "homepage": "https://github.com/comp426-2022-spring/a02-eohana-unc#readme"
+  "homepage": "https://github.com/comp426-2022-spring/a02-eohana-unc#readme",
+  "dependencies": {
+    "minimist": "^1.2.5"
+  }
 }
