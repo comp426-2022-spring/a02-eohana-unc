@@ -1,8 +1,10 @@
 import minimist from "minimist";
-import { coinFlips } from "./modules/coin.mjs";
+import { coinFlips, countFlips } from "./modules/coin.mjs";
 
 const args = minimist(process.argv)
 
 // console.log(args)
 
-console.log(coinFlips(args['number']))
+const flips = coinFlips(args['number'])
+console.log(flips)
+console.log(countFlips(flips))
