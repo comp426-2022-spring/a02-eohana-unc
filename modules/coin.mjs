@@ -61,11 +61,15 @@ function coinFlips(flips) {
 
 function countFlips(array) {
   const result = {
-    heads: 0,
-    tails: 0
+    // heads: 0,
+    // tails: 0
   }
   for (let flip of array) {
-    result[flip]++;
+    if (result[flip] > 0) {
+      result[flip]++;
+    } else {
+      result[flip] = 1
+    }
   }
   return result;
 }
@@ -95,4 +99,4 @@ function flipACoin(call) {
  * 
  * Export all of your named functions
 */
-export {coinFlip, coinFlips, countFlips, flipACoin}
+export {coinFlip, coinFlips, countFlips, flipACoin};
