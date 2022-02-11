@@ -5,7 +5,7 @@ const args = minimist(process.argv);
 
 let call = args["call"]
 
-if (call === null){
+if (!call){
   console.log("Error: no input.")
 }
 if (!(call === "heads" || call === "tails")) {

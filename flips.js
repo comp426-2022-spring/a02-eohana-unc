@@ -5,6 +5,7 @@ const args = minimist(process.argv);
 
 // console.log(args)
 
-const flips = coinFlips(args['number']) || 1;
+let numflips = args['number'] || 1
+const flips = coinFlips(numflips);
 console.log(flips);
 console.log(countFlips(flips));
