@@ -8,6 +8,5 @@ const args = minimist(process.argv);
 let numflips = args['number'] || 1
 const flips = coinFlips(numflips);
 console.log(flips);
-if (numflips > 1) {
-  console.log(countFlips(flips));
-}
+console.log(countFlips(flips));
+
