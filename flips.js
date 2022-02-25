@@ -22,5 +22,6 @@ function output_flips(flips) {
 let numflips = args['number'] || 1
 const flips = coinFlips(numflips);
 console.log(output_flips(flips));
+// console.log(flips)
 console.log(countFlips(flips));
 
